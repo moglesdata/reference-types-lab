@@ -4,7 +4,15 @@
  * @param {Object} store - An object representing a single store. See the instructions for details on its shape.
  * @returns {Object[]} The same `stores` array that was inputted.
  */
-function addNewStore(stores, store) {}
+function addNewStore(stores, store) {
+  /*Psuedo code:
+  -see stores =  array 
+  -Add object to array
+  -push into array
+  -new store position is at end of array */
+  stores.push(store);
+  return stores;
+}
 
 /**
  * Removes a store object at the given position.
