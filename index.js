@@ -35,7 +35,11 @@ return stores;
  * @param {Object} store - An object representing a single store. See the instructions for details on its shape.
  * @returns {Object} The duplicated store object. This should not be the same as the store that was inputted.
  */
-function duplicateStore(store) {}
+function duplicateStore(store) {
+  let myStore = {store:true} ;
+  let newStore = Object.assign ({}, myStore);
+return store;
+}
 
 module.exports = {
   addNewStore,
